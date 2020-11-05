@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MpAndroidChartTest</string>
+    <string name="button">LineChart</string>
+</resources>
