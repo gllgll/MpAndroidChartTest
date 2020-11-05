@@ -8,18 +8,28 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button buttonLine, buttonDline;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.button_linechart);
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonLine = findViewById(R.id.button_linechart);
+        buttonDline = findViewById(R.id.button_dlinechart);
+
+        buttonLine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, LineChartTable.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonDline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DlineChartTable.class);
                 startActivity(intent);
             }
         });

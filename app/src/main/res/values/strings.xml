@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MpAndroidChartTest</string>
     <string name="button">LineChart</string>
+    <string name="dline_chart">DlineChart</string>
+    <string name="randomdata">随机数据</string>
 </resources>
